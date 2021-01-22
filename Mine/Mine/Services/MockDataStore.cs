@@ -14,12 +14,11 @@ namespace Mine.Services
         {
             items = new List<ItemModel>()
             {
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Parmigiano Reggiano", Description="An Italian hard cheese produced from cow's milk.", Value=10 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Taleggio", Description="An Italian semisoft, washed-rind cheese produced from cow's milk.", Value=5 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Roquefort", Description="A French blue cheese produced from sheep's milk.", Value=8 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Mahon", Description="A Spanish soft white cheese produced from cow's milk.", Value=3 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Camembert", Description="A French soft bloomy-rind cheese produced from cow's milk.", Value=7 }
             };
         }
 

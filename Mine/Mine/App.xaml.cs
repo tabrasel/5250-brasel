@@ -9,11 +9,15 @@ namespace Mine
     public partial class App : Application
     {
 
+        /// <summary>
+        /// Initializes the application.
+        /// </summary>
         public App()
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            // Use the DatabaseService as the DependencyService
+            DependencyService.Register<DatabaseService>();
             MainPage = new MainPage();
         }
 

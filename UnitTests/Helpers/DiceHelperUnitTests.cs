@@ -5,7 +5,7 @@ using Mine.Helpers;
 namespace UnitTests.Helpers
 {
     [TestFixture]
-    class DiceHelperUnitTest
+    class DiceHelperUnitTests
     {
         [Test]
         public void RollDice_Invalid_Roll_Zero_Should_Return_Zero()

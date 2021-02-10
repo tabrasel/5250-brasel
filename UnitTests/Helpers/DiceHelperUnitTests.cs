@@ -80,6 +80,23 @@ namespace UnitTests.Helpers
         }
 
         [Test]
+        public void RollDice_Valid_Roll_1_Dice_10_Forced_5_Should_Return_5()
+        {
+            //Arrange
+            DiceHelper.ForceRollsToNotRandom = true;
+            DiceHelper.ForcedRandomValue = 5;
+
+            // Act
+            var result = DiceHelper.RollDice(1, 10);
+
+            // Reset
+            DiceHelper.ForceRollsToNotRandom = false;
+
+            // Assert
+            Assert.AreEqual(5, result);
+        }
+
+        [Test]
         public void RollDice_Invalid_Roll_Forced_1_Should_Return_1()
         {
             //Arrange

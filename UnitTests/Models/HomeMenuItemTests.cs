@@ -27,11 +27,13 @@ namespace UnitTests.Models
 
             // Act
             var result = new HomeMenuItem();
+            result.Id = MenuItemType.Items;
             result.Title = "Title";
 
             // Reset
 
             // Assert
+            Assert.AreEqual(MenuItemType.Items, result.Id);
             Assert.AreEqual("Title", result.Title);
         }
     }
